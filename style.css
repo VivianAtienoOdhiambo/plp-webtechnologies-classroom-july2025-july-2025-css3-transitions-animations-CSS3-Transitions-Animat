@@ -1,0 +1,57 @@
+/* General page styling */
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background: #f9f9f9;
+  color: #333;
+  padding: 20px;
+}
+
+/* Animated Box */
+#animatedBox {
+  width: 150px;
+  height: 150px;
+  background-color: #4cafef;
+  margin: 20px auto;
+  line-height: 150px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+
+  /* Transition effect for hover */
+  transition: transform 0.5s ease, background-color 0.5s ease;
+}
+
+/* Hover effect */
+#animatedBox:hover {
+  transform: scale(1.2) rotate(10deg);
+  background-color: #3a8ac9;
+}
+
+/* Keyframe animation (used when class added by JS) */
+@keyframes pulse {
+  0% { transform: scale(1); background-color: #4cafef; }
+  50% { transform: scale(1.4); background-color: #3a8ac9; }
+  100% { transform: scale(1); background-color: #4cafef; }
+}
+
+/* Class toggled by JavaScript */
+.pulsing {
+  animation: pulse 1s ease-in-out 3;
+}
+
+/* Button styling */
+button {
+  padding: 10px 20px;
+  margin-top: 10px;
+  border: none;
+  background-color: #4cafef;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #3a8ac9;
+}
